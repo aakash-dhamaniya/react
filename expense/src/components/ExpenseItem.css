@@ -30,6 +30,9 @@ border: 1px solid white;
 padding: 0.5rem;
 border-radius: 12px;
 }
+.location{
+    color:white;
+}
 @media (min-width:580px) {
     .expense-item_description{
         flex-direction: row;

@@ -5,7 +5,7 @@ function App() {
       id: 'e2',
       title: 'New Tv',
       amount: 799,
-      date: new Date(2022,8,12),
+      date: new Date(2022,6,12),
       LocationOfExpenditure: 'laxmi nagar',
     },
     {
@@ -19,7 +19,7 @@ function App() {
       id: 'e4',
       title: 'new Dest (Wooden)',
       amount: 94.12,
-      date: new Date(2022,8,12),
+      date: new Date(2022,8,13),
       LocationOfExpenditure: 'mayur vihar',
     },
   ]
@@ -35,18 +35,19 @@ function App() {
   // </div>
   // }
   return(
-      <div>
-      {expense.map(item => {
-       return<ExpenseItem 
-         title={item.title} 
-         amount={item.amount} 
-         date={item.date} location={item.location}>
-         </ExpenseItem>
-      })}
-    </div>
+    <div>
+    {expense.map(item => {
+     return<ExpenseItem 
+       title={item.title} 
+       amount={item.amount} 
+       date={item.date} 
+       location={item.LocationOfExpenditure}>
+       </ExpenseItem>
+    })}
+  </div>
 
 
-  );
+);
 }
 
 export default App;
