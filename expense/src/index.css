@@ -13,3 +13,7 @@ body {
   background-color: #3f3f3f;
 }
 
+.root{
+  display:flex ;
+  border: 1px solid white;
+}
